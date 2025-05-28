@@ -5,7 +5,7 @@
     align-items: center;
     height: 100dvh;
     width: 100%;
-    background-image: url('banner-img.jpg');
+    background-image: url('/Images/banner-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
