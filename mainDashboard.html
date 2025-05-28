@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Barangay Tagapo Business Page</title>
         
         <link rel="stylesheet" href="/Stylesheets/mainDashboardStyle.css" />
         <link rel="stylesheet" href="/Stylesheets/websiteBanner.css" />
@@ -67,7 +68,7 @@
                     </div>
 
                     <div class="button">
-                        <button class="read-btn">Read More</button>
+                        <button class="read-btn" data-url="/Pages/antonina.html">Read More</button>
                     </div>
                 </div>
 
@@ -83,7 +84,7 @@
                     </div>
 
                     <div class="button">
-                        <button class="read-btn">Read More</button>
+                        <button class="read-btn" data-url="/Pages/nyk.html">Read More</button>
                     </div>
                 </div>
 
@@ -99,17 +100,30 @@
                     </div>
 
                     <div class="button">
-                        <button class="read-btn">Read More</button>
+                        <button class="read-btn" data-url="/Pages/strose.html">Read More</button>
                     </div>
                 </div>  
             </div>
 
+            <!-- iframe -->
             <div class="iframe-container">
-                <iframe src="https://www.bing.com" width="450" height="950" style="border:0;">
-                    None
+                <iframe id="jobIframe" src="https://www.bing.com" width="450" height="950" style="border:0;">
+                None
                 </iframe>
             </div>
         </div>
 
+        <!-- JavaScript to handle button clicks -->
+        <script>
+            const buttons = document.querySelectorAll('.read-btn');
+            const iframe = document.getElementById('jobIframe');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const url = button.getAttribute('data-url');
+                    iframe.src = url;
+                });
+            });
+        </script>
     </body>
 </html>
