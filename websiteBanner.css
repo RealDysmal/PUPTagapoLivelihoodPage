@@ -1,0 +1,48 @@
+.web-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    padding: 0 5vw;
+    background-image: url('banner-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.web-banner h1 {
+    font-size: 8vw;
+    margin: 0;
+    margin-left: 5vw;
+}
+
+.web-banner p {
+    font-size: 2vw;
+    margin-left: 5.5vw;
+    margin-top: 2vw;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vw;
+    color: #ffffff;
+    background-color: #eb0000;
+    border-radius: 50vw;
+}
+
+.contact-btn p {
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-btn:hover {
+    background-color: rgb(200, 30, 30);
+    cursor: pointer;
+}
