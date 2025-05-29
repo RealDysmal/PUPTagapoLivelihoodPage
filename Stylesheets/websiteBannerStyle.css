@@ -22,14 +22,18 @@
     margin-top: 2vw;
 }
 
+.red-highlight {
+    color: #eb0000;
+}
+
 .contact-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 6vw;
-    color: #ffffff;
     background-color: #eb0000;
     border-radius: 50vw;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .contact-btn p {
@@ -41,6 +45,8 @@
 }
 
 .contact-btn:hover {
-    background-color: rgb(200, 30, 30);
+    background-color: #B3291B;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
     cursor: pointer;
 }

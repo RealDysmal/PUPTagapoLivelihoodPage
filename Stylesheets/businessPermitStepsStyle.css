@@ -1,0 +1,129 @@
+.business-permit-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.business-permit-steps h2 {
+    font-size: 3vw;
+    text-align: center;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.business-permit-steps h2::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 3px;
+    background-color: #eb0000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.steps-wrapper {
+    counter-reset: step;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    align-items: center;
+}
+
+.steps {
+    counter-increment: step;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    width: 50rem;
+    position: relative;
+    border-radius: 0.8vw;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.steps h3 {
+    font-size: 1.8vw;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+}
+
+.steps p {
+    font-size: 1.3vw;
+}
+
+/* Step Number Circle */
+.steps::before {
+    content: counter(step);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -8.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5rem;
+    height: 5rem;
+    background-color: #eb0000;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 2vw;
+    z-index: 1;
+}
+
+/* Vertical Line between Circles */
+.steps:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: -6rem;
+    top: calc(50% + 3.5rem); /* Starts at bottom of circle */
+    height: calc(50% + 3rem); /* Extend past the next step */
+    width: 3px;
+    background-color: #f0f0f0;
+    z-index: 0;
+}
+
+/* Hovering Effect for Steps */
+.steps:hover {
+    box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Hovering Effect for Step Circles */
+.steps:hover::before {
+    box-shadow: 0 0 15px rgba(235, 0, 0, 0.5);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.permit-note {
+    align-self: flex-start;
+    margin-left: 19rem;
+    font-size: 1.3vw;
+}
+
+.apply-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    background-color: #eb0000;
+    border-radius: 50vw;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.apply-btn a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.apply-btn:hover {
+    background-color: #B3291B;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
