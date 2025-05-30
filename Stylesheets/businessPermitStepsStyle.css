@@ -97,9 +97,8 @@
 }
 
 .permit-note {
-    align-self: flex-start;
-    margin-left: 19rem;
     font-size: 1.3vw;
+    text-align: center;
 }
 
 .apply-btn {
