@@ -3,6 +3,8 @@
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .business-permit-steps h2 {

@@ -1,3 +1,7 @@
+.jobs-section {
+    margin-left: 8%;
+    margin-right: 8%;
+}
 .job-title-row {
     display: flex;
     justify-content: left;
@@ -17,12 +21,8 @@
     margin-bottom: 20px;
 }
 
-.job-title-row .red {
+.job-title-row .red-highlight {
     color: #eb0000;
-}
-
-.job-title-row .black {
-    color: #3c3c3c;
 }
 
 .job-panel {
