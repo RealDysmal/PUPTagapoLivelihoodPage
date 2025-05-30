@@ -62,3 +62,19 @@ html, body {
     height: 400px;
     }
 }
+header {
+  background-color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+header h1{
+    color: black;
+}
+footer {
+  background-color: #eb0000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
