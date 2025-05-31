@@ -8,17 +8,18 @@
 }
 
 .business-permit-steps h2 {
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 3.5vw, 10rem);
     text-align: center;
     position: relative;
-    padding-top: 2rem;
+    padding-top: 2vw;
 }
 
+/* Horizontal Line above Heading (Need a Business Permit?) */
 .business-permit-steps h2::after {
     content: '';
     display: block;
     width: 30%;
-    height: 3px;
+    height: 0.2vw;
     background-color: #eb0000;
     position: absolute;
     left: 50%;
@@ -37,21 +38,21 @@
 .steps {
     counter-increment: step;
     background-color: #f0f0f0;
-    padding: 2rem;
-    width: 50rem;
+    padding: 3vw;
+    width: clamp(5rem, 50vw, 100rem);
     position: relative;
     border-radius: 0.8vw;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .steps h3 {
-    font-size: 1.8vw;
-    margin-top: 0rem;
-    margin-bottom: 3rem;
+    font-size: clamp(1.2rem, 2vw, 3rem);
+    margin-top: 0vw;
+    margin-bottom: 3vw;
 }
 
 .steps p {
-    font-size: 1.3vw;
+    font-size: clamp(0.8rem, 1.2vw, 2rem);
 }
 
 /* Step Number Circle */
@@ -61,11 +62,11 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: -8.5rem;
-    top: 50%;
+    left: -8.5vw;
+    top: calc(50% + 0.2vw);
     transform: translateY(-50%);
-    width: 5rem;
-    height: 5rem;
+    width: 5vw;
+    height: 5vw;
     background-color: #eb0000;
     color: #ffffff;
     font-weight: bold;
@@ -78,10 +79,10 @@
 .steps:not(:last-child)::after {
     content: '';
     position: absolute;
-    left: -6rem;
-    top: calc(50% + 3.5rem); /* Starts at bottom of circle */
-    height: calc(50% + 3rem); /* Extend past the next step */
-    width: 3px;
+    left: calc(-8.5vw + (5vw / 2) - (clamp(0.1rem, 0.3vw, 0.25rem) / 2));
+    top: calc(50% + 3.5vw);
+    height: clamp(calc(50% + 6vw), 50vw, calc(50% + 6.5vw));
+    width: clamp(0.1rem, 0.3vw, 0.25rem);
     background-color: #f0f0f0;
     z-index: 0;
 }
@@ -99,7 +100,14 @@
 }
 
 .permit-note {
-    font-size: 1.3vw;
+    width: clamp(5rem, 60vw, 100rem);
+    margin-left: 14.5vw;
+    margin-right: auto;
+    text-align: left; /* or match your steps' text alignment */
+}
+
+.permit-note p {
+    font-size: clamp(0.8rem, 1.3vw, 2rem);
 }
 
 .apply-btn {
@@ -115,7 +123,7 @@
 
 .apply-btn a {
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: clamp(0.7rem, 1.5vw, 50px);
     padding: 1vw 3vw;
     margin: 0;
     text-decoration: none;
