@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="/Stylesheets/businessPermitTableStyle.css" />
         <link rel="stylesheet" href="/Stylesheets/jobOpportunitiesStyle.css" />
         <link rel="stylesheet" href="/Stylesheets/jobDetailsStyle.css" />
+        <link rel="stylesheet" href="/Stylesheets/buttonPagination.css" />
+        <script src="/Javascript/jobIframe.js" defer></script>
     </head>
 
     <body>
@@ -199,84 +201,76 @@
 
         <!--Job Opportunities Panel-->
         <div class="jobs-section">
-            <div class="job-title-row">
-                <h2><span class="red-highlight">Job</span> Opportunities</h2>
-                <div class="job-title-underline"></div>
-            </div>
-            <div class="job-panel">
-                <div class="job-list">
-                    <!-- Job cards here -->
-                    <!--Job Container 1-->
-                    <div class="job-container">
-                        <div class="job-logo">
-                            <img src="/Images/antonina-logo.jpg" alt="Antonina Industrial Corporation Logo">
-                        </div>
-                        
-                        <div class="job-texts">
-                            <h2>Antonina Industrial Corporation</h2>
-                            <p>Baynosa Compound, Rizal Blvd., Brgy. Malusak, City of Santa Rosa, Laguna</p>
-                        </div>
-
-                        <div class="button">
-                            <button class="read-btn" data-url="/Pages/antonina.html">Read More</button>
-                        </div>
-                    </div>
-
-                    <!--Job Container 2-->
-                    <div class="job-container">
-                        <div class="job-logo">
-                            <img src="/Images/nyk-logo.png" alt="NYK TDG Philippines Inc. Logo">
-                        </div>
-                        
-                        <div class="job-texts">
-                            <h2>NYK TDG Philippines Inc.</h2>
-                            <p>Location</p>
-                        </div>
-
-                        <div class="button">
-                            <button class="read-btn" data-url="/Pages/nyk.html">Read More</button>
-                        </div>
-                    </div>
-
-                    <!--Job Container 3-->
-                    <div class="job-container">
-                        <div class="job-logo">
-                            <img src="/Images/strose-logo.png" alt="Saint Rose Transit Inc. Logo">
-                        </div>
-                        
-                        <div class="job-texts">
-                            <h2>Saint Rose Transit Inc.</h2>
-                            <p>Km. 35 National Hi-way, Brgy. Canlalay, Binan City, Laguna <i>(Beside Motor Central infront of Phoenix Gas Station)</i></p>
-                        </div>
-
-                        <div class="button">
-                            <button class="read-btn" data-url="/Pages/strose.html">Read More</button>
-                        </div>
-                    </div>  
+                <div class="job-title-row">
+                    <h2><span class="red-highlight">Job</span> Opportunities</h2>
+                    <div class="job-title-underline"></div>
                 </div>
+                <div class="job-panel">
+                    <div class="job-list">
+                            <!-- Job cards here -->
+                            <!--Job Container 1-->
+                            <div class="job-container">
+                                <div class="job-logo">
+                                    <img src="/Images/antonina-logo.jpg" alt="Antonina Industrial Corporation Logo">
+                                </div>
+                                
+                                <div class="job-texts">
+                                    <h2>Antonina Industrial Corporation</h2>
+                                    <p>Baynosa Compound, Rizal Blvd., Brgy. Malusak, City of Santa Rosa, Laguna</p>
+                                </div>
 
-                <div class="iframe-container">
-                    <!-- iframe -->
-                    <iframe id="jobIframe" src="/Pages/SelectJob.html" width="450" height="950" style="border:0;">
-                    None
-                    </iframe>
-                </div>
-            </div>
+                                <div class="button">
+                                    <button class="read-btn" data-url="/Pages/antonina.html">Read More</button>
+                                </div>
+                            </div>
+
+                            <!--Job Container 2-->
+                            <div class="job-container">
+                                <div class="job-logo">
+                                    <img src="/Images/nyk-logo.png" alt="NYK TDG Philippines Inc. Logo">
+                                </div>
+                                
+                                <div class="job-texts">
+                                    <h2>NYK TDG Philippines Inc.</h2>
+                                    <p>Location</p>
+                                </div>
+
+                                <div class="button">
+                                    <button class="read-btn" data-url="/Pages/nyk.html">Read More</button>
+                                </div>
+                            </div>
+
+                            <!--Job Container 3-->
+                            <div class="job-container">
+                                <div class="job-logo">
+                                    <img src="/Images/strose-logo.png" alt="Saint Rose Transit Inc. Logo">
+                                </div>
+                                
+                                <div class="job-texts">
+                                    <h2>Saint Rose Transit Inc.</h2>
+                                    <p>Km. 35 National Hi-way, Brgy. Canlalay, Binan City, Laguna <i>(Beside Motor Central infront of Phoenix Gas Station)</i></p>
+                                </div>
+
+                                <div class="button">
+                                    <button class="read-btn" data-url="/Pages/strose.html">Read More</button>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <button class="page-button">1</button>
+                                <button class="page-button">2</button>
+                                <button class="page-button">3</button>
+                                <button class="page-button next">Next</button>
+                            </div>
+                        </div>
+
+                        <div class="iframe-container">
+                            <iframe id="jobIframe" src="/Pages/SelectJob.html" width="450" height="955" style="border:0;">
+                            None
+                            </iframe>
+                        </div>
+                </div>                    
         </div>
 
-        <!-- JavaScript to handle button clicks -->
-        <script>
-            // Select all read buttons and the iframe
-            const buttons = document.querySelectorAll('.read-btn');
-            const iframe = document.getElementById('jobIframe');
-
-            buttons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const url = button.getAttribute('data-url');
-                    iframe.src = url;
-                });
-            });
-        </script>
         <footer>
         <h1>THIS IS A DUMMY FOOTER</h1>
         <!--Insert Footer here-->
