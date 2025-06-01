@@ -76,15 +76,23 @@
 }
 
 /* Vertical Line between Circles */
-.steps:not(:last-child)::after {
-    content: '';
+.connector-line-top,
+.connector-line-bottom {
     position: absolute;
-    left: calc(-8.5vw + (5vw / 2) - (clamp(0.1rem, 0.3vw, 0.25rem) / 2));
-    top: calc(50% + 3.5vw);
-    height: clamp(calc(50% + 6vw), 50vw, calc(50% + 6.5vw));
-    width: clamp(0.1rem, 0.3vw, 0.25rem);
+    left: calc(-8.5vw + 2.5vw - 0.15vw);
+    width: clamp(0.2rem, 0.3vw, 0.25rem);
     background-color: #f0f0f0;
     z-index: 0;
+}
+
+.connector-line-top {
+    top: clamp(-10vw, -8vw, -6vw);
+    height: clamp(10vw, 13vw, 15vw);
+}
+
+.connector-line-bottom {
+    top: clamp(12vw, 13.5vw, 15vw);
+    bottom: clamp(-10vw, -8vw, -6vw);
 }
 
 /* Hovering Effect for Steps */
@@ -101,9 +109,9 @@
 
 .permit-note {
     width: clamp(5rem, 60vw, 100rem);
-    margin-left: 14.5vw;
+    margin-left: 19.5vw;
     margin-right: auto;
-    text-align: left; /* or match your steps' text alignment */
+    text-align: left;
 }
 
 .permit-note p {

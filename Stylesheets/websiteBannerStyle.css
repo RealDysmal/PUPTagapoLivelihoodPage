@@ -3,12 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    height: 50vw;
     width: 100%;
     background-image: url('/Images/banner-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
 }
 
