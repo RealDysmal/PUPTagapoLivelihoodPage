@@ -13,18 +13,28 @@ buttons.forEach(button => {
 document.addEventListener("DOMContentLoaded", () => {
   const pageButtons = document.querySelectorAll(".page-button");
   const pages = document.querySelectorAll(".job-page");
+  let currentPage = document.querySelector(".job-page[data-page='1']");
+  currentPage.classList.add("active");
 
   pageButtons.forEach(btn => {
     btn.addEventListener("click", () => {
-      const targetPage = btn.dataset.page;
+      const targetPage = document.querySelector(`.job-page[data-page="${btn.dataset.page}"]`);
+      if (!targetPage || targetPage === currentPage) return;
 
-      pages.forEach(page => {
-        if (page.dataset.page === targetPage) {
-          page.style.display = "block";
-        } else {
-          page.style.display = "none";
-        }
-      });
+      // Fade out current
+      currentPage.classList.remove("active");
+
+      // After fade-out transition, switch page
+      setTimeout(() => {
+        currentPage.style.display = "none";
+        targetPage.style.display = "block";
+
+        // Trigger fade-in after a short delay to allow display:block to apply
+        setTimeout(() => {
+          targetPage.classList.add("active");
+          currentPage = targetPage;
+        }, 10);
+      }, 500); // Match transition duration
     });
   });
 });

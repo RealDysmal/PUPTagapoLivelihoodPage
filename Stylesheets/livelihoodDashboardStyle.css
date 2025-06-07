@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* For Scroll Animations per Section */
+.fade-in{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* For Job Button Animation */
+.job-page {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  display: none;
+}
+
+.job-page.active {
+  display: block;
+  opacity: 1;
+}
+
+/* For Header and Footer Section */
+header {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #eb0000;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Media query for iframe section */
+@media (max-width: 1100px) {
+    .iframe-container iframe {
+        width: 90%;
+        height: 500px;
+    }
+}
