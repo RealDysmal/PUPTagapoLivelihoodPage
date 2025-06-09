@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="/Stylesheets/buttonPagination.css" />
         <script src="/Javascript/jobIframe.js" defer></script>
         <script src="/Javascript/scrollingAnimation.js" defer></script>
+        <script src="/Javascript/tablePagination.js"></script>
     </head>
 
     <body>
@@ -76,130 +77,44 @@
             <br><br>
             <h1 style="text-align: center;">Barangay Clearance</h1>
             <table id="permitTable">
+                
                 <tr>
                     <th colspan="2">For the issuance of Business Permit</td>
                 </tr>
-                <tr>
-                    <td><strong>a.</strong> Accounting Services Firm</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>b.</strong> Barbershops / Beauty Shops / Salon and Spa</td>
-                    <td>Php 300.00</td>
-                </tr>
-                <tr>
-                    <td><strong>c.</strong> Branded Commercial Stores</td>
-                    <td>Php 1000.00</td>
-                </tr>
-                <tr>
-                    <td><strong>d.</strong> Carwash Shop</td>
-                    <td>Php 300.00</td>
-                </tr>
-                <tr>
-                    <td><strong>e.</strong> Catering / Event Services</td>
-                    <td>Php 300.00</td>
-                </tr>
-                <tr>
-                    <td><strong>f.</strong> Commercial Stores</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>g.</strong> Commercial Rental Spaces</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>h.</strong> Convinience Stores</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>i.</strong> Construction Firms and Hardware</td>
-                    <td>Php 1000.00</td>
-                </tr>
-                <tr>
-                    <td><strong>j.</strong> Dry and Wet Market Stalls</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>k.</strong> Engineering Firms and Services</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>l.</strong> Financial Firms and Pawnshops</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>m.</strong> Food Services and Catering</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>n.</strong> Gasoline Stations</td>
-                    <td>Php 1000.00</td>
-                </tr>
-                <tr>
-                    <td><strong>o.</strong> Healthcare and Medical Facilities</td>
-                    <td>Php 1000.00</td>
-                </tr>
-                <tr>
-                    <td><strong>p.</strong> Insurance Firms and Services</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>q.</strong> Internet Café Shops</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>r.</strong> Junk Shops</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>s.</strong> Learning Centers</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>t.</strong> LPG Trading</td>
-                    <td>Php 1000.00</td>
-                </tr>
-                <tr>
-                    <td><strong>u.</strong> Motor Parts and Services Shops</td>
-                    <td>Php 1000.00</td>
-                </tr>
-                <tr>
-                    <td><strong>v.</strong> Online Shops and Services</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>w.</strong> Photo Centers</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>x.</strong> Residential Rentals</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>y.</strong> Residential and Development</td>
-                    <td>Php 1000.00</td>
-                </tr>
-                <tr>
-                    <td><strong>z.</strong> Sari-Sari Store</td>
-                    <td>Php 300.00</td>
-                </tr>
-                <tr>
-                    <td><strong>aa.</strong> Transport and Vehicle Services</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>bb.</strong> Travel Agencies</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>cc.</strong> Water Refilling Stations</td>
-                    <td>Php 500.00</td>
-                </tr>
-                <tr>
-                    <td><strong>dd.</strong> Corporations / Factories / Manufacturing Firms / Other businesses not mentioned</td>
-                    <td>Php 1000.00</td>
-                </tr>
+                <tbody id="tableBody">
+            <tr><td><strong>a.</strong> Accounting Services Firm</td><td>Php 500.00</td></tr>
+            <tr><td><strong>b.</strong> Barbershops / Beauty Shops / Salon and Spa</td><td>Php 300.00</td></tr>
+            <tr><td><strong>c.</strong> Branded Commercial Stores</td><td>Php 1000.00</td></tr>
+            <tr><td><strong>d.</strong> Carwash Shop</td><td>Php 300.00</td></tr>
+            <tr><td><strong>e.</strong> Catering / Event Services</td><td>Php 300.00</td></tr>
+            <tr><td><strong>f.</strong> Commercial Stores</td><td>Php 500.00</td></tr>
+            <tr><td><strong>g.</strong> Commercial Rental Spaces</td><td>Php 500.00</td></tr>
+            <tr><td><strong>h.</strong> Convinience Stores</td><td>Php 500.00</td></tr>
+            <tr><td><strong>i.</strong> Construction Firms and Hardware</td><td>Php 1000.00</td></tr>
+            <tr><td><strong>j.</strong> Dry and Wet Market Stalls</td><td>Php 500.00</td></tr>
+            <tr><td><strong>k.</strong> Engineering Firms and Services</td><td>Php 500.00</td></tr>
+            <tr><td><strong>l.</strong> Financial Firms and Pawnshops</td><td>Php 500.00</td></tr>
+            <tr><td><strong>m.</strong> Food Services and Catering</td><td>Php 500.00</td></tr>
+            <tr><td><strong>n.</strong> Gasoline Stations</td><td>Php 1000.00</td></tr>
+            <tr><td><strong>o.</strong> Healthcare and Medical Facilities</td><td>Php 1000.00</td></tr>
+            <tr><td><strong>p.</strong> Insurance Firms and Services</td><td>Php 500.00</td></tr>
+            <tr><td><strong>q.</strong> Internet Café Shops</td><td>Php 500.00</td></tr>
+            <tr><td><strong>r.</strong> Junk Shops</td><td>Php 500.00</td></tr>
+            <tr><td><strong>s.</strong> Learning Centers</td><td>Php 500.00</td></tr>
+            <tr><td><strong>t.</strong> LPG Trading</td><td>Php 1000.00</td></tr>
+            <tr><td><strong>u.</strong> Motor Parts and Services Shops</td><td>Php 1000.00</td></tr>
+            <tr><td><strong>v.</strong> Online Shops and Services</td><td>Php 500.00</td></tr>
+            <tr><td><strong>w.</strong> Photo Centers</td><td>Php 500.00</td></tr>
+            <tr><td><strong>x.</strong> Residential Rentals</td><td>Php 500.00</td></tr>
+            <tr><td><strong>y.</strong> Residential and Development</td><td>Php 1000.00</td></tr>
+            <tr><td><strong>z.</strong> Sari-Sari Store</td><td>Php 300.00</td></tr>
+            <tr><td><strong>aa.</strong> Transport and Vehicle Services</td><td>Php 500.00</td></tr>
+            <tr><td><strong>bb.</strong> Travel Agencies</td><td>Php 500.00</td></tr>
+            <tr><td><strong>cc.</strong> Water Refilling Stations</td><td>Php 500.00</td></tr>
+            <tr><td><strong>dd.</strong> Corporations / Factories / Manufacturing Firms / Other businesses not mentioned</td><td>Php 1000.00</td></tr>
+            </tbody>
             </table>
+            <div id="pagination"></div>
         </div>
 
         <!--Job Opportunities Panel-->

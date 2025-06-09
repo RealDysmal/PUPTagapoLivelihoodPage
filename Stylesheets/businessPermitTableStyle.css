@@ -38,3 +38,19 @@ tr:nth-child(even) td {
 tr:last-child td {
   border-bottom: none;
 }
+ #pagination {
+   margin-top: 20px;
+  text-align: center;
+}
+
+#pagination .page-btn {
+  padding: 5px 10px;
+  margin: 0 3px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+#pagination .page-btn:hover {
+  background-color: #ddd;
+}
