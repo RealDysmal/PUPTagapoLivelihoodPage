@@ -109,7 +109,7 @@
 
 .permit-note {
     width: clamp(5rem, 60vw, 100rem);
-    margin-left: 9.5vw;
+    margin-left: 11vw;
     margin-right: auto;
     text-align: left;
 }
