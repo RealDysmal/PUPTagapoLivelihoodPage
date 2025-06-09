@@ -39,7 +39,7 @@
     counter-increment: step;
     background-color: #f0f0f0;
     padding: 3vw;
-    width: clamp(5rem, 50vw, 100rem);
+    width: clamp(5rem, 65vw, 100rem);
     position: relative;
     border-radius: 0.8vw;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -109,7 +109,7 @@
 
 .permit-note {
     width: clamp(5rem, 60vw, 100rem);
-    margin-left: 19.5vw;
+    margin-left: 9.5vw;
     margin-right: auto;
     text-align: left;
 }
