@@ -9,18 +9,6 @@ html, body {
     overflow-x: hidden;
 }
 
-/* For Scroll Animations per Section */
-.fade-in{
-  opacity: 0;
-  transform: translateY(100px);
-  transition: all 1s ease-in-out;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 /* For Job Button Animation */
 .job-page {
   opacity: 0;
