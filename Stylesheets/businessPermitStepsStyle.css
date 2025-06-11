@@ -3,15 +3,19 @@
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 78px;
+    margin-right: 78px;
 }
 
 .business-permit-steps h2 {
-    font-size: clamp(1.5rem, 3.5vw, 10rem);
+    font-size: 48px;
     text-align: center;
     position: relative;
-    padding-top: 2vw;
+    padding-top: 0.5vw;
+}
+
+.red-highlight {
+    color: #eb0000;
 }
 
 /* Horizontal Line above Heading (Need a Business Permit?) */
@@ -39,20 +43,20 @@
     counter-increment: step;
     background-color: #f0f0f0;
     padding: 3vw;
-    width: clamp(5rem, 65vw, 100rem);
+    width: 928px;
     position: relative;
     border-radius: 0.8vw;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .steps h3 {
-    font-size: clamp(1.2rem, 2vw, 3rem);
+    font-size: 32px;
     margin-top: 0vw;
     margin-bottom: 3vw;
 }
 
 .steps p {
-    font-size: clamp(0.8rem, 1.2vw, 2rem);
+    font-size: 20px;
 }
 
 /* Step Number Circle */
@@ -71,7 +75,8 @@
     color: #ffffff;
     font-weight: bold;
     border-radius: 50%;
-    font-size: 2vw;
+    font-size: 48px;
+    font-weight: 600;
     z-index: 1;
 }
 
@@ -86,13 +91,13 @@
 }
 
 .connector-line-top {
-    top: clamp(-10vw, -8vw, -6vw);
-    height: clamp(10vw, 13vw, 15vw);
+    top: clamp(-9vw, -12vw, -19vw);
+    height: clamp(13vw, 15vw, 17vw);
 }
 
 .connector-line-bottom {
-    top: clamp(12vw, 13.5vw, 15vw);
-    bottom: clamp(-10vw, -8vw, -6vw);
+    top: clamp(12vw, 15.5vw, 17vw);
+    bottom: clamp(-9vw, -10vw, -13vw);
 }
 
 /* Hovering Effect for Steps */
@@ -109,13 +114,14 @@
 
 .permit-note {
     width: clamp(5rem, 60vw, 100rem);
-    margin-left: 11vw;
+    margin-left: 15vw;
     margin-right: auto;
     text-align: left;
 }
 
 .permit-note p {
-    font-size: clamp(0.8rem, 1.3vw, 2rem);
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .apply-btn {
@@ -131,7 +137,8 @@
 
 .apply-btn a {
     text-decoration: none;
-    font-size: clamp(0.7rem, 1.5vw, 50px);
+    font-size: 24px;
+    font-weight: 500;
     padding: 1vw 3vw;
     margin: 0;
     text-decoration: none;

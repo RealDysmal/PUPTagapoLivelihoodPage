@@ -3,50 +3,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vw;
-    width: 100%;
-    background-image: url('/Images/banner-img.jpg');
+    gap: 12px;
+    background: linear-gradient(to bottom, transparent 60%, white 80%),
+        url(/Images/banner-img.jpg) center -50px no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
+    width: 100%;
+    min-height: 85vh;
+    padding: 12px 24px;
+    text-align: center;
 }
 
-.web-banner h1 {
-    font-size: clamp(2rem, 9vw, 12rem);
-    margin: 0;
+.web-banner .title {
+  font-size: 50px;
+  margin: 0px;
 }
 
-.web-banner p {
-    font-size: clamp(0.7rem, 1.8vw, 50px);
-    margin-top: 2vw;
+.web-banner .title span {
+  color: #eb0000;
+}
+.web-banner>* {
+  max-width: 1200px;
 }
 
-.red-highlight {
-    color: #eb0000;
-}
-
-.contact-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6vw;
+.solid-button {
+    border: none;
+    border-radius: 50vh;
+    padding: 10px 16px;
     background-color: #eb0000;
-    border-radius: 50vw;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.contact-btn a {
-    font-size: clamp(0.7rem, 1.5vw, 50px);
-    padding: 1vw 2vw;
-    margin: 0;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.contact-btn:hover {
-    background-color: #B3291B;
+.solid-button:hover {
+    background-color: #c70000;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transform: translateY(-5px);
     cursor: pointer;
