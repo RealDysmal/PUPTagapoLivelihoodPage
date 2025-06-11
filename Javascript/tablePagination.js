@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const tbody = document.getElementById("tableBody");
     const rows = Array.from(tbody.querySelectorAll("tr"));
     const totalPages = Math.ceil(rows.length / rowsPerPage);
-    const paginationButtons = document.querySelectorAll(".page-button");
-    const nextButton = document.querySelector(".page-button.next");
+    const paginationButtons = document.querySelectorAll(".pageTable");
+    const countText = document.getElementById("count");
 
     let currentPage = 1;
 
@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
         paginationButtons.forEach(btn => btn.classList.remove("active"));
         paginationButtons[page - 1]?.classList.add("active");
 
+        // Update the count text
+        countText.textContent = `Showing ${page} of ${totalPages} Pages`;
+
         currentPage = page;
     }
 
@@ -32,15 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
             showPage(index + 1);
         });
     });
-
-    // Handle "Next" button
-    if (nextButton) {
-        nextButton.addEventListener("click", () => {
-            if (currentPage < totalPages) {
-                showPage(currentPage + 1);
-            }
-        });
-    }
 
     // Initialize table with first page
     showPage(1);

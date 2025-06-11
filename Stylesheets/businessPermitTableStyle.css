@@ -1,10 +1,9 @@
 table {
-  width: 70%;
+  width: 100%;
   margin: 2rem auto;
+  padding: 0; 
   border-collapse: separate;
   border-spacing: 0;
-  border: 1px solid #eb0000;
-  border-radius: 12px;
   overflow: hidden;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   transition: box-shadow 0.3s ease;
@@ -19,7 +18,7 @@ th {
   color: #fff;
   padding: 14px;
   font-size: 1.1rem;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -53,4 +52,71 @@ tr:last-child td {
 
 #pagination .page-btn:hover {
   background-color: #ddd;
+}
+.container {
+  background-color: #f0f0f0; 
+  padding: 0px;
+  max-width: 90%;
+  margin: 20%;          
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  justify-content: center;
+}
+.container h1{
+  font-style: italic;
+  font-weight: bold;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.image img {
+  margin: 0px;
+  display: block;
+  width: 100%;
+}
+
+.business-permit-table h1, h2{
+  text-align: center;
+}
+.green{
+  color: #11A679;
+}
+.paginationTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 10% 40px 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pagination-buttons {
+  display: flex;
+  gap: 10px; /* spacing between buttons */
+}
+
+.pageTable {
+  background-color: #f8f8f8;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pageTable:hover {
+  background-color: #ddd;
+}
+
+.pageTable.active {
+  background-color: #eb0000;
+  color: #ffffff;
+  border-color: #eb0000;
+  font-weight: bold;
+}
+#count {
+  font-weight: bold;
 }
