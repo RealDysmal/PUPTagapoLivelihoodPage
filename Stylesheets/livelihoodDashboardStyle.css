@@ -11,14 +11,14 @@ html, body {
 
 /* For Job Button Animation */
 .job-page {
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-  display: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    display: none;
 }
 
 .job-page.active {
-  display: block;
-  opacity: 1;
+    display: block;
+    opacity: 1;
 }
 
 /* For Header and Footer Section */
@@ -29,7 +29,7 @@ header {
 }
 
 footer {
-    background-color: #eb0000;
+    background-color: #000000;
     padding: 10px;
     text-align: center;
     color: white;
