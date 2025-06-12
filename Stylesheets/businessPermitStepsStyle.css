@@ -31,6 +31,7 @@
     top: 0;
 }
 
+/* Reset steps counter */
 .steps-wrapper {
     counter-reset: step;
     display: flex;
@@ -39,14 +40,54 @@
     align-items: center;
 }
 
-.steps {
+/* Wrapper for each step */
+.step-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Step Circle (separated) */
+.step-circle {
     counter-increment: step;
-    background-color: #f0f0f0;
+    content: counter(step);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+    min-width: 5vw;
+    min-height: 5vw;
+    background-color: #eb0000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 48px;
+    border-radius: 50%;
+    margin-right: 3vw;
+    position: relative;
+}
+
+.step-circle::before {
+    content: counter(step);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+/* Hover effect */
+.step-item:hover .step-circle {
+    box-shadow: 0 0 15px rgba(235, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Step Content Block */
+.steps {
+    background-color: #f5f5f5;
     padding: 3vw;
     width: 928px;
-    position: relative;
     border-radius: 0.8vw;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative;
 }
 
 .steps h3 {
@@ -59,44 +100,29 @@
     font-size: 20px;
 }
 
-/* Step Number Circle */
-.steps::before {
-    content: counter(step);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: -8.5vw;
-    top: calc(50% + 0.2vw);
-    transform: translateY(-50%);
-    width: 5vw;
-    height: 5vw;
-    background-color: #eb0000;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 50%;
-    font-size: 48px;
-    font-weight: 600;
-    z-index: 1;
+/* Hovering Effect for Step Box */
+.step-item:hover .steps {
+    box-shadow: 0px 0px 50px rgba(235, 0, 0, 0.5);
+    transform: translateY(-5px);
 }
 
-/* Vertical Line between Circles */
+/* Connector lines for Step Circles */
 .connector-line-top,
 .connector-line-bottom {
     position: absolute;
-    left: calc(-8.5vw + 2.5vw - 0.15vw);
+    left: -5.7vw;
     width: clamp(0.2rem, 0.3vw, 0.25rem);
     background-color: #f0f0f0;
     z-index: 0;
 }
 
 .connector-line-top {
-    top: clamp(-9vw, -12vw, -19vw);
-    height: clamp(13vw, 15vw, 17vw);
+    top: clamp(-9vw, -11vw, -19vw);
+    height: clamp(14vw, 15vw, 19vw);
 }
 
 .connector-line-bottom {
-    top: clamp(12vw, 15.5vw, 17vw);
+    top: clamp(11vw, 16.5vw, 18vw);
     bottom: clamp(-9vw, -10vw, -13vw);
 }
 
@@ -113,10 +139,11 @@
 }
 
 .permit-note {
-    width: clamp(5rem, 60vw, 100rem);
-    margin-left: 15vw;
-    margin-right: auto;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     text-align: left;
+    padding-left: calc(8vw + 3vw);
 }
 
 .permit-note p {
@@ -142,7 +169,7 @@
     padding: 1vw 3vw;
     margin: 0;
     text-decoration: none;
-    color: #ffffff;
+    color: white
 }
 
 .apply-btn:hover {

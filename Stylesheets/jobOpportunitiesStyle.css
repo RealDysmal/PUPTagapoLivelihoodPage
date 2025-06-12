@@ -10,10 +10,9 @@
     align-items: flex-start;
     margin-top: 5%;
     margin-bottom: 0%;
-    margin-left:9%;
     border-bottom: #eb0000 solid 2px;
     border-width: 3px;
-    width: 69vw;
+    width: 89.5vw;
 }
 
 .job-title-row h2 {
@@ -44,7 +43,7 @@
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #ffffff;
+    background-color: white;
     width: 448px;
     height: 358px;
     margin-bottom: 30px;
@@ -57,7 +56,7 @@
     display: flex;
     align-items: center;
     border-radius: 30px 30px 0 0;
-    background-color: #ffffff;
+    background-color: white;
     width: auto;
     height: 100px;
     overflow: hidden;
@@ -102,7 +101,7 @@
 
 .job-container .button .read-btn {
     background-color: #eb0000;
-    color: #ffffff;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 20px;

@@ -5,17 +5,29 @@ table {
   border-collapse: separate;
   border-spacing: 0;
   overflow: hidden;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  table-layout: fixed;
+}
+
+#permitTable th:first-child,
+#permitTable td:first-child {
+  width: 70%; /* Business column */
+}
+
+#permitTable th:nth-child(2),
+#permitTable td:nth-child(2) {
+  width: 30%; /* Price column */
 }
 
 table:hover {
-  box-shadow: 0 8px 16px rgba(211, 47, 47, 0.3);
+    box-shadow: 0 0 50px rgba(235, 0, 0, 0.5);
+    transform: scale(1.02);
 }
 
 th {
+  font-size: 24px;
   background-color: #eb0000;
-  color: #fff;
+  color: white;
   padding: 14px;
   font-size: 1.1rem;
   text-align: left;
@@ -23,10 +35,10 @@ th {
 }
 
 td {
+  font-size: 18px;
   padding: 12px;
   border-bottom: 1px solid #f0f0f0;
   background-color: #fff;
-  color: #333;
   text-align: left;
 }
 
@@ -37,8 +49,9 @@ tr:nth-child(even) td {
 tr:last-child td {
   border-bottom: none;
 }
- #pagination {
-   margin-top: 20px;
+
+#pagination {
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -57,31 +70,45 @@ tr:last-child td {
   background-color: #f0f0f0; 
   padding: 0px;
   max-width: 90%;
-  margin: 6%;          
+  margin: 6%;  
+  margin-top: 15%;  
+  margin-bottom: 12%;      
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex; 
   justify-content: center;
 }
+
 .container h1{
+  font-size: 32px;
   font-style: italic;
   font-weight: bold;
 }
+
+.container h2{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .image {
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
 .image img {
   margin: 0px;
   display: block;
   width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
 .business-permit-table h1, h2{
   text-align: center;
 }
 .green{
-  color: #11A679;
+  color: #04AA6D;
 }
 .paginationTable {
   display: flex;
@@ -94,11 +121,11 @@ tr:last-child td {
 .pagination-buttons {
   display: flex;
   gap: 10px; /* spacing between buttons */
+  font-size: 24px;
 }
 
 .pageTable {
   background-color: #f8f8f8;
-  color: #333;
   border: 1px solid #ccc;
   padding: 8px 14px;
   font-size: 16px;
@@ -113,10 +140,11 @@ tr:last-child td {
 
 .pageTable.active {
   background-color: #eb0000;
-  color: #ffffff;
+  color: white;
   border-color: #eb0000;
   font-weight: bold;
 }
+
 #count {
-  font-weight: bold;
+  font-size: 16px;
 }
