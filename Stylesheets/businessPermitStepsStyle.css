@@ -47,7 +47,7 @@
     position: relative;
 }
 
-/* Step Circle (separated) */
+/* Step Circle */
 .step-circle {
     counter-increment: step;
     content: counter(step);
