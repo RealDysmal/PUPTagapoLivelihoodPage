@@ -18,21 +18,31 @@
 }
 .pageStyle h2 {
     font-size: 24px;
+    font-weight: 700;
     margin-top: 0px;
     margin-bottom: 10px;
-    color: #333;
+    color: #5A413D;
+}
+.pageStyle h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #5A413D;
 }
 .pageStyle li {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
     margin-top: 0px;
     margin-bottom: 10px;
-    color: #333;
+    color: #5A413D;
 }
 
 .pageStyle p {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 0px;
-    color: #555;
+    color: #5A413D;
     line-height: 1.4;
 }
 
@@ -44,7 +54,8 @@
 }
 
 .contact-info {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.6;
 }
 
@@ -52,7 +63,7 @@
     display: flex;
     align-items: center;
     margin: 5px 0;
-    color: #555;
+    color: #5A413D;
     font-size: 14px;
     line-height: 1.4;
 }
@@ -62,4 +73,16 @@
     height: 18px;
     margin-right: 8px;
     object-fit: contain;
+}
+
+.redtext {
+    color: #8C1D18;
+}
+
+.qualification li {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #5A413D;
 }
