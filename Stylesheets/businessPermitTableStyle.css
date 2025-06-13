@@ -1,7 +1,7 @@
 table {
   width: 90%;
   margin: 2rem auto;
-  padding: 0; 
+  padding: 0px; 
   border-collapse: separate;
   border-spacing: 0;
   overflow: hidden;
@@ -11,17 +11,17 @@ table {
 
 #permitTable th:first-child,
 #permitTable td:first-child {
-  width: 70%; /* Business column */
+  width: 75%; /* Business column */
 }
 
 #permitTable th:nth-child(2),
 #permitTable td:nth-child(2) {
-  width: 30%; /* Price column */
+  width: 25%; /* Price column */
 }
 
 table:hover {
-    box-shadow: 0 0 50px rgba(235, 0, 0, 0.5);
-    transform: scale(1.02);
+    box-shadow: 0 0 50px rgba(142, 136, 136, 0.5);
+    transform: scale(1);
 }
 
 th {
@@ -81,12 +81,14 @@ tr:last-child td {
   font-size: 32px;
   font-style: italic;
   font-weight: bold;
+  margin-bottom: 0px;
 }
 
 .container h2{
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  margin-top: 0px;
 }
 
 .image {
@@ -106,7 +108,7 @@ tr:last-child td {
 .business-permit-table h1, h2{
   text-align: center;
 }
-.green{
+.green {
   color: #04AA6D;
 }
 .paginationTable {
