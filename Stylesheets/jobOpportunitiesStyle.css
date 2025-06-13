@@ -112,7 +112,7 @@
 }
 
 .job-container .button .read-btn:hover {
-    background-color: #B3291B;
+    background-color: #c70000;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transform: translateY(-5px);
     cursor: pointer;

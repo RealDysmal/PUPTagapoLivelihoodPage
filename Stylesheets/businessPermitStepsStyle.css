@@ -110,20 +110,20 @@
 .connector-line-top,
 .connector-line-bottom {
     position: absolute;
-    left: -5.7vw;
-    width: clamp(0.2rem, 0.3vw, 0.25rem);
+    left: calc(2.5vw - 2.5px);
+    width: 5px;
     background-color: #f0f0f0;
-    z-index: 0;
+    z-index: -1;
 }
 
 .connector-line-top {
-    top: clamp(-9vw, -11vw, -19vw);
-    height: clamp(14vw, 15vw, 19vw);
+    top: clamp(-9vw, -10vw, -12vw);
+    height: clamp(13vw, 15vw, 16vw);
 }
 
 .connector-line-bottom {
-    top: clamp(11vw, 16.5vw, 18vw);
-    bottom: clamp(-9vw, -10vw, -13vw);
+    top: 230px;
+    height: clamp(13vw, 14.5vw, 16vw);
 }
 
 /* Hovering Effect for Steps */
