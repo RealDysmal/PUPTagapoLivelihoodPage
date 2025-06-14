@@ -16,25 +16,31 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentPage = document.querySelector(".job-page[data-page='1']");
   currentPage.classList.add("active");
 
+  // ✅ Make the first button red by default
+  const defaultBtn = document.querySelector('.page-button[data-page="1"]');
+  if (defaultBtn) defaultBtn.classList.add("active");
+
   pageButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const targetPage = document.querySelector(`.job-page[data-page="${btn.dataset.page}"]`);
       if (!targetPage || targetPage === currentPage) return;
 
-      // Fade out current
-      currentPage.classList.remove("active");
+      // Remove active class from all buttons
+      pageButtons.forEach(b => b.classList.remove("active"));
 
-      // After fade-out transition, switch page
+      // Add active class to clicked button
+      btn.classList.add("active");
+
+      // Page fade animation
+      currentPage.classList.remove("active");
       setTimeout(() => {
         currentPage.style.display = "none";
         targetPage.style.display = "block";
-
-        // Trigger fade-in after a short delay to allow display:block to apply
         setTimeout(() => {
           targetPage.classList.add("active");
           currentPage = targetPage;
         }, 10);
-      }, 500); // Match transition duration
+      }, 500);
     });
   });
 });

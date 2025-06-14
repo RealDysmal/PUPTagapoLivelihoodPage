@@ -131,3 +131,19 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 60%;
 }
+
+/* For Job Button Animation */
+.job-page {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.job-page.active {
+    display: block;
+    opacity: 1;
+}
+
+.page-button .active {
+  background-color: #eb0000;
+  color: white;
+}
