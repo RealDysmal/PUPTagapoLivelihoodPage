@@ -16,19 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentPage = document.querySelector(".job-page[data-page='1']");
   currentPage.classList.add("active");
 
-  // ✅ Make the first button red by default
   const defaultBtn = document.querySelector('.page-button[data-page="1"]');
   if (defaultBtn) defaultBtn.classList.add("active");
 
   pageButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       const targetPage = document.querySelector(`.job-page[data-page="${btn.dataset.page}"]`);
+      
       if (!targetPage || targetPage === currentPage) return;
 
-      // Remove active class from all buttons
       pageButtons.forEach(b => b.classList.remove("active"));
 
-      // Add active class to clicked button
       btn.classList.add("active");
 
       // Page fade animation
