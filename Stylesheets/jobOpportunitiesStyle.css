@@ -1,6 +1,6 @@
 .jobs-section {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .job-title-row {
@@ -151,7 +151,7 @@
 }
 
 /* Media query for iframe section */
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .iframe-container iframe {
     width: 90%;
     height: 500px;

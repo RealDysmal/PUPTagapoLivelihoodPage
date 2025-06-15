@@ -160,7 +160,7 @@
   max-width: 1100px;
   margin: 0 auto;
   text-align: left;
-  padding-left: calc(3vw + 5vw);
+  padding-left: calc(1vw + 2vw);
 }
 
 .permit-note p {
