@@ -5,6 +5,7 @@
     align-items: center;
     margin-left: 78px;
     margin-right: 78px;
+    margin-top: 150px;
 }
 
 .business-permit-steps h2 {
@@ -98,6 +99,7 @@
 
 .steps p {
     font-size: 20px;
+    line-height: 45px;
 }
 
 .steps ul {
