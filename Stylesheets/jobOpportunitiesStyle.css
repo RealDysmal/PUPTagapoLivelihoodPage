@@ -1,150 +1,159 @@
 .jobs-section {
-    margin-left: 78px;
-    margin-right: 78px;
-    border: 2px solid black;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .job-title-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    margin-top: 5%;
-    margin-bottom: 0px;
-    border-bottom: #eb0000 solid 2px;
-    border-width: 3px;
-    width: 87.1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1%;
+  margin-bottom: 0;
+  border-bottom: 3px solid #eb0000;
+  width: 100%;
+  max-width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .job-title-row h2 {
-    font-size: 48px;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 0px;
-    align-items: flex-start;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 0px;
+  align-items: flex-start;
 }
 
 .job-title-row .red-highlight {
-    color: #eb0000;
+  color: #eb0000;
 }
 
 .job-subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    margin-bottom: 10px;
-    margin-top: 0px
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 .job-panel {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: min(5em, 5%);
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: min(5em, 5%);
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .job-container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: white;
-    width: 448px;
-    height: 358px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  width: 448px;
+  height: 358px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
 }
 
 .job-container .job-logo {
-    display: flex;
-    align-items: center;
-    border-radius: 30px 30px 0 0;
-    background-color: white;
-    width: auto;
-    height: 100px;
-    overflow: hidden;
-    justify-content: center;
-    padding: 5px;
-    margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px 30px 0 0;
+  background-color: white;
+  width: auto;
+  height: 100px;
+  overflow: hidden;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom: 15px;
 }
 
 .job-container .job-logo img {
-    width: 100%;
-    max-height: 60px;
-    object-fit: scale-down;
+  width: 100%;
+  max-height: 60px;
+  object-fit: scale-down;
 }
 
 .job-container .job-texts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
 }
 
 .job-container h2 {
-    font-size: 22px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    text-align: left;
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .job-container p {
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 0px;
-    color: #6e6462;
-    line-height: 1.4;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0px;
+  color: #6e6462;
+  line-height: 1.4;
 }
 
 .job-container .button {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .job-container .button .read-btn {
-    background-color: #eb0000;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: #eb0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .job-container .button .read-btn:hover {
-    background-color: #c70000;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px);
-    cursor: pointer;
+  background-color: #c70000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
-.iframe-container { 
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 60%;
+.iframe-container {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 60%;
 }
 
 /* For Job Button Animation */
 .job-page {
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .job-page.active {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 .page-button .active {
   background-color: #eb0000;
   color: white;
+}
+
+/* Media query for iframe section */
+@media (max-width: 1366px) {
+  .iframe-container iframe {
+    width: 90%;
+    height: 500px;
+  }
 }

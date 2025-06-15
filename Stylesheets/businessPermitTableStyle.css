@@ -67,14 +67,10 @@ tr:last-child td {
   background-color: #f0f0f0;
   height: 1350px;
   padding: 0px;
-  max-width: 90%;
-  margin: 6%;  
-  margin-top: 15%;  
-  margin-bottom: 12%;
+  max-width: 65%;
+  margin: 15% auto 12% auto;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  display: flex; 
-  justify-content: center;
-  flex-direction: column;
+  display: block;
   box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.598);
   position: relative;
   overflow-y: auto;
@@ -109,6 +105,12 @@ tr:last-child td {
   height: 500px;
   object-fit: cover;
 }
+
+.business-permit-table {
+  width: 100%;
+  display: block;
+}
+
 
 .business-permit-table h1, h2{
   text-align: center;

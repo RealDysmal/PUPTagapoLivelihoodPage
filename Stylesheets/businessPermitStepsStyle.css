@@ -1,167 +1,182 @@
 .business-permit-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    margin-left: 78px;
-    margin-right: 78px;
-    margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 150px;
 }
 
 .business-permit-steps h2 {
-    font-size: 48px;
-    text-align: center;
-    position: relative;
-    padding-top: 0.5vw;
+  font-size: 48px;
+  text-align: center;
+  position: relative;
+  padding-top: 0.5vw;
 }
 
 .red-highlight {
-    color: #eb0000;
+  color: #eb0000;
 }
 
 /* Horizontal Line above Heading (Need a Business Permit?) */
 .business-permit-steps h2::after {
-    content: '';
-    display: block;
-    width: 30%;
-    height: 0.2vw;
-    background-color: #eb0000;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.2vw;
+  background-color: #eb0000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
 }
 
 /* Reset steps counter */
 .steps-wrapper {
-    counter-reset: step;
-    display: flex;
-    flex-direction: column;
-    gap: 3vw;
-    align-items: center;
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  align-items: center;
 }
 
 /* Wrapper for each step */
 .step-item {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 /* Step Circle */
 .step-circle {
-    counter-increment: step;
-    content: counter(step);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5vw;
-    height: 5vw;
-    min-width: 5vw;
-    min-height: 5vw;
-    background-color: #eb0000;
-    color: #fff;
-    font-weight: bold;
-    font-size: 48px;
-    border-radius: 50%;
-    margin-right: 3vw;
-    position: relative;
+  counter-increment: step;
+  content: counter(step);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+  height: 5vw;
+  min-width: 5vw;
+  min-height: 5vw;
+  background-color: #eb0000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 48px;
+  border-radius: 50%;
+  margin-right: 3vw;
+  position: relative;
 }
 
 .step-circle::before {
-    content: counter(step);
-    font-size: 48px;
-    font-weight: 600;
+  content: counter(step);
+  font-size: 48px;
+  font-weight: 600;
 }
 
 /* Hover effect */
 .step-item:hover .step-circle {
-    box-shadow: 0 0 15px rgba(235, 0, 0, 0.5);
-    transform: scale(1.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(235, 0, 0, 0.5);
+  transform: scale(1.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Step Content Block */
 .steps {
-    background-color: #f5f5f5;
-    padding: 3vw;
-    width: 928px;
-    border-radius: 0.8vw;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    position: relative;
+  background-color: #f5f5f5;
+  padding: 3vw;
+  width: 995px;
+  border-radius: 0.8vw;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
 }
 
 .steps h3 {
-    font-size: 32px;
-    margin-top: 0vw;
-    margin-bottom: 3vw;
+  font-size: 32px;
+  margin-top: 0vw;
+  margin-bottom: 2vw;
 }
 
 .steps p {
-    font-size: 20px;
-    line-height: 45px;
+  font-size: 20px;
+  line-height: 45px;
 }
 
 .steps ul {
-    font-size: 20px;
-    line-height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  margin-left: 30px;
 }
 
 .steps b {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .steps acronym {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Hovering Effect for Step Box */
 .step-item:hover .steps {
-    box-shadow: 0px 0px 50px rgba(235, 0, 0, 0.5);
-    transform: translateY(-5px);
+  box-shadow: 0px 0px 50px rgba(235, 0, 0, 0.5);
+  transform: translateY(-5px);
 }
 
 /* Connector lines for Step Circles */
 .connector-line-top,
 .connector-line-bottom {
-    position: absolute;
-    left: calc(2.5vw - 2.5px);
-    width: 5px;
-    background-color: #f0f0f0;
-    z-index: -1;
+  position: absolute;
+  left: calc(2.5vw - 2.5px);
+  width: 5px;
+  background-color: #f0f0f0;
+  z-index: -1;
 }
 
 .connector-line-top {
-    top: clamp(-9vw, -10vw, -12vw);
-    height: clamp(15vw, 18vw, 20vw);
+  top: -8vw;
+  height: 14vw;
 }
 
 .connector-line-bottom {
-    top: 255px;
-    height: clamp(15vw, 17.5vw, 19vw);
+  top: 270px;
+  height: 12vw;
 }
+
 
 /* Hovering Effect for Steps */
 .steps:hover {
-    box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px);
+  box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
 }
 
 /* Hovering Effect for Step Circles */
 .steps:hover::before {
-    box-shadow: 0 0 15px rgba(235, 0, 0, 0.5);
-    transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 15px rgba(235, 0, 0, 0.5);
+  transform: translateY(-50%) scale(1.1);
 }
 
 .permit-note {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: left;
-    padding-left: calc(8vw + 3vw);
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: calc(3vw + 5vw);
 }
 
 .permit-note p {
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Media Query for Connector Lines */
+@media (max-width: 1366px) {
+  .connector-line-top {
+    top: -8vw;
+    height: 15vw;
+  }
+
+  .connector-line-bottom {
+    top: 250px;
+    height: 14vw;
+  }
 }
