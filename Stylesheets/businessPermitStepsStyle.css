@@ -142,7 +142,6 @@
   height: 12vw;
 }
 
-
 /* Hovering Effect for Steps */
 .steps:hover {
   box-shadow: 0px 10px 30px 20px rgba(0, 0, 0, 0.15);
@@ -160,7 +159,7 @@
   max-width: 1100px;
   margin: 0 auto;
   text-align: left;
-  padding-left: calc(1vw + 2vw);
+  padding-left: 8vw;
 }
 
 .permit-note p {
@@ -178,5 +177,11 @@
   .connector-line-bottom {
     top: 250px;
     height: 14vw;
+  }
+
+  .permit-note {
+    max-width: 1000px;
+    padding-left: 0.1vw;
+    padding-right: 0.1vw;
   }
 }

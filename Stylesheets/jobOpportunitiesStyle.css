@@ -54,7 +54,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
   width: 448px;
-  height: 358px;
+  height: 359px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
@@ -151,9 +151,20 @@
 }
 
 /* Media query for iframe section */
-@media (max-width: 1024px) {
+@media (max-width: 1365px) {
+  .jobs-section {
+    margin-left: 170px;
+    margin-right: 170px;
+  }
+
+  .job-container {
+    width: 380px;
+    height: 359px;
+  }
+
   .iframe-container iframe {
-    width: 90%;
-    height: 500px;
+    width: 400px;
+    height: 1130px;
+    border: none;
   }
 }

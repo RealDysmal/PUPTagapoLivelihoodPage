@@ -5,7 +5,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* header */
+/* For Header and Footer Section */
+/* Header */
 header {
   position: absolute;
   top: 0;
@@ -130,7 +131,7 @@ header.sticky {
   color: white;
 }
 
-/* footer */
+/* Footer */
 footer {
   margin: 0;
   background-color: #221f1f;
