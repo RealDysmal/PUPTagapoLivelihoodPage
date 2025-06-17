@@ -151,7 +151,7 @@
 }
 
 /* Media query for iframe section */
-@media (max-width: 1365px) {
+@media (max-width: 1366px) {
   .jobs-section {
     margin-left: 170px;
     margin-right: 170px;

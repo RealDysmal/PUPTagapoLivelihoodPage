@@ -138,13 +138,13 @@
 }
 
 .connector-line-top {
-  top: -7vw;
-  height: 12vw;
+  top: -8vw;
+  height: 14vw;
 }
 
 .connector-line-bottom {
-  top: 290px;
-  height: 11vw;
+  top: 270px;
+  height: 12.5vw;
 }
 
 /* Hovering Effect for Steps */
@@ -181,7 +181,7 @@
 
   .connector-line-bottom {
     top: 250px;
-    height: 13vw;
+    height: 14vw;
   }
 
   .permit-note {
