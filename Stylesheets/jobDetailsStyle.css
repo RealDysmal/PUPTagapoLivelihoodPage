@@ -2,12 +2,17 @@
   display: block;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: #ffffff;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
   padding: 20px;
+}
+
+.image-container {
+  padding: 10px;
+  height: 100px;
 }
 
 .pageStyle h1 {
@@ -20,6 +25,7 @@
   font-weight: 700;
   margin-top: 0px;
   margin-bottom: 10px;
+  color: #eb0000;
 }
 .pageStyle h3 {
   font-size: 22px;
@@ -29,7 +35,7 @@
 }
 .pageStyle li {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -72,9 +78,4 @@
   color: #eb0000;
 }
 
-.qualification li {
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
+

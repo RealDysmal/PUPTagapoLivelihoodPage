@@ -76,7 +76,8 @@
 
 /* Hover effect */
 .step-item:hover .step-circle {
-  box-shadow: 0 0 15px rgba(235, 0, 0, 0.5);
+  background-color: #f10000;
+  box-shadow: rgba(235, 0, 0, 0.5) 0px 0px 16px 0px, rgba(255, 255, 255, 0.8) 0px 0px 16px 0px;
   transform: scale(1.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -118,8 +119,12 @@
 
 /* Hovering Effect for Step Box */
 .step-item:hover .steps {
-  box-shadow: 0px 0px 50px rgba(235, 0, 0, 0.5);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   transform: translateY(-5px);
+}
+
+.step-item:hover .steps h3{
+  color: #f10000;
 }
 
 /* Connector lines for Step Circles */
