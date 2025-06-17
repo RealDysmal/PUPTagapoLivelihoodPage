@@ -12,12 +12,12 @@ table {
 
 #permitTable th:first-child,
 #permitTable td:first-child {
-  width: 50%; /* Business column */
+  width: 75%; /* Business column */
 }
 
 #permitTable th:nth-child(2),
 #permitTable td:nth-child(2) {
-  width: 50%; /* Price column */
+  width: 25%; /* Price column */
 }
 
 
@@ -56,26 +56,15 @@ tr:last-child td {
   border-bottom: none;
 }
 
-#pagination {
-  margin-top: 20px;
-  text-align: center;
-}
-
-#pagination .page-btn {
-  padding: 5px 10px;
-  margin: 0 3px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  background-color: #f8f8f8;
-}
-
 .container {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   height: 1350px;
   padding: 0px;
   max-width: 75%;
   margin: 15% auto 12% auto;
   display: block;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   box-shadow: rgb(0 0 0 / .4) 0 2px 4px, rgb(0 0 0 / .3) 0 7px 13px -3px, rgb(0 0 0 / .2) 0 -3px 0 inset;
   position: relative;
   overflow-y: auto;
@@ -136,14 +125,8 @@ tr:last-child td {
 }
 
 
-.pagination-buttons {
-  display: flex;
-  gap: 10px; /* spacing between buttons */
-  font-size: 24px;
-}
-
 .pageTable {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   justify-content: center;
   width: 45px;
   height: 45px;
