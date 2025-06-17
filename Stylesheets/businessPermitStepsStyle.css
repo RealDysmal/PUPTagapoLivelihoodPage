@@ -66,6 +66,7 @@
   border-radius: 50%;
   margin-right: 3vw;
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .step-circle::before {
@@ -74,12 +75,11 @@
   font-weight: 600;
 }
 
-/* Hover effect */
+/* Hovering Effect for Circle */
 .step-item:hover .step-circle {
   background-color: #f10000;
   box-shadow: rgba(235, 0, 0, 0.5) 0px 0px 16px 0px, rgba(255, 255, 255, 0.8) 0px 0px 16px 0px;
   transform: scale(1.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Step Content Block */
@@ -120,7 +120,7 @@
 /* Hovering Effect for Step Box */
 .step-item:hover .steps {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  transform: translateY(-5px);
+  transform: scale(1.03);
 }
 
 .step-item:hover .steps h3{
