@@ -1,6 +1,10 @@
 .jobs-section {
-  margin-left: 360px;
-  margin-right: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .job-title-row {
@@ -11,7 +15,7 @@
   margin-top: 1%;
   margin-bottom: 0;
   border-bottom: 3px solid #eb0000;
-  width: 100%;
+  width: 1135px;
   max-width: 100%;
   padding: 0px;
   box-sizing: border-box;
@@ -40,11 +44,11 @@
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
+  box-sizing: border-box;
   padding: min(5em, 5%);
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .job-container {
@@ -148,23 +152,4 @@
 .page-button .active {
   background-color: #eb0000;
   color: white;
-}
-
-/* Media query for iframe section */
-@media (max-width: 1366px) {
-  .jobs-section {
-    margin-left: 170px;
-    margin-right: 170px;
-  }
-
-  .job-container {
-    width: 380px;
-    height: 359px;
-  }
-
-  .iframe-container iframe {
-    width: 400px;
-    height: 1130px;
-    border: none;
-  }
 }
